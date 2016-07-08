@@ -1,0 +1,16 @@
+$ancho: 50px;
+
+body {
+  background: red;
+  // Comentario de Sass
+  background-color: #900;
+}
+
+h1 {
+  color: #333;
+  font-family: Arial;
+}
+
+p {
+  max-width: 150px - $ancho;
+}

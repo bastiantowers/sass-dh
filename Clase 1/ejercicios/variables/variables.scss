@@ -1,0 +1,19 @@
+$base: #F90;
+$negro: #333;
+
+body {
+  background: red;
+  /* Comentario comun de CSS */
+  // Comentario de Sass
+  background-color: $base;
+}
+
+h1 {
+  color: $negro;
+  font-family: Arial;
+}
+
+p {
+  color: $negro;
+  font-family: Verdana;
+}

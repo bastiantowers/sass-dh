@@ -1,0 +1,24 @@
+
+$sly: (
+	color: #060,
+	background-color: #FFF,
+	font-family: serif
+);
+
+$gry: (
+	color: #D00,
+	background-color: #000,
+	font-family: sans
+);
+
+.sly{
+	@each $key, $valor in $sly{
+		#{$key}: $valor;
+	}
+}
+
+.gry{
+	@each $key2, $valor2 in $gry{
+		#{$key2}: $valor2;
+	}
+}
