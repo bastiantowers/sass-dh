@@ -1,10 +1,13 @@
 body {
   background: red;
-  background-color: #900; }
+  background-color: #900;
+}
 
 h1 {
   color: #333;
-  font-family: Arial; }
+  font-family: Arial;
+}
 
 p {
-  max-width: 100px; }
+  max-width: 100px;
+}
