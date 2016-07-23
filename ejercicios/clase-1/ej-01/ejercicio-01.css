@@ -1,0 +1,114 @@
+/*  CONSIGNA
+Crear tres archivos de CSS con extensión .scss
+y luego realizar copias de cada uno renombrándolos
+con la extensión .sass eliminando llaves y punto y
+comas necesarios para que el archivo se lea correctamente
+como un archivo de Sass y no de Sassy.
+Recomendación: utilizar en esta etapa compiladores online
+para probar el código como http://sassmeister.com o http://codepen.io  */
+
+html,
+body {
+	 font-family: 'Lato', sans-serif;
+	 font-weight: 400;
+	 padding: 0;
+	 margin: 0;
+	 height: 100%;
+}
+
+body {
+	background: url('../../static/images/bg.jpg') repeat;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+	text-decoration: none;
+}
+
+header,
+section,
+footer {
+	padding: 10px;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+.header{
+	background: #fff;
+	height: 60px;
+	padding-top: 23px;
+	z-index: 99;
+}
+
+.header__logo{
+	float: left;
+	font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #404040;
+    line-height: 0.8;
+}
+
+.header__logo-name {
+
+}
+
+.header__nav {
+	float: right;
+}
+
+.header__nav-list {
+	float: right;
+}
+
+.header__nav-list li {
+	display: inline-block;
+	padding: 0 6px;
+	position: relative;
+	border-right: 1px solid #f2f2f2;
+}
+
+.header__nav-list li a {
+	display: inline-block;
+	color: #404040;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 3px 35px;
+}
+.header__nav-list li:last-child {
+	border-right: none;
+}
+
+.header__nav-list > li.active > a,
+.header__nav-list > li > a:focus,
+.header__nav-list > li:hover > a {
+    color: #de3c2f;
+}
+
+.main-section {
+	min-height: 100%;
+	/* equal to footer height */
+	padding-bottom: 142px; 
+}
+.main-section:after {
+  content: "";
+  display: block;
+}
+
+.footer {
+	padding: 10px 0;
+	background: #fff;
+	text-align: center;
+	color: #979797;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
