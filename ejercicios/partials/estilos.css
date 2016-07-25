@@ -1,21 +1,18 @@
 @font-face {
   src: url("fuente.svg");
   font-family: 'fuente';
-  font-weight: 400;
-}
-
+  font-weight: 400; }
 body {
   background: red;
   /* Comentario comun de CSS */
-  background-color: red;
-}
+  background-color: red; }
 
 h1 {
   color: #333;
-  font-family: Arial;
-}
+  font-family: Arial; }
 
 p {
   color: #333;
-  font-family: Verdana;
-}
+  font-family: Verdana; }
+
+/*# sourceMappingURL=estilos.css.map */

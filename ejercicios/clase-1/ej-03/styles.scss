@@ -1,0 +1,22 @@
+$baseFondo: #eee;
+$colorTexto: #666;
+
+$altoTextos: 1.2;
+$separadorParrafos: 10px;
+
+$separadorSecciones: 20px;
+
+html,
+body {
+	background-color: $baseFondo;
+	color: $colorTexto;
+}
+
+p {
+	line-height: $altoTextos;
+	margin-top: $separadorParrafos;
+}
+
+.primerParrafo {
+	margin-top: $separadorParrafos + $separadorSecciones;
+}

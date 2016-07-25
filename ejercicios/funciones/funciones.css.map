@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;AAMA,SAAS;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,8BAA2C;;AAE/D,eAAe;EACb,gBAAgB,EAAE,8BAA4C;;;;;AAQhE,EAAE;EACD,gBAAgB,EAAE,IAAI;;AAEvB,QAAQ;EACP,gBAAgB,EAAE,sBACnB;;;;;AAKA,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,OAAmB",
+"sources": ["funciones.scss"],
+"names": [],
+"file": "funciones.css"
+}
