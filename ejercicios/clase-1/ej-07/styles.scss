@@ -1,0 +1,32 @@
+// 1
+/*
+Estilizar una botonera utilizando nesting. No usar mas de 4 niveles de
+nesting juntos para evitar generar una hoja de estilos con selectores muy especificos.
+*/
+// 2
+/*
+Utilizando el signo &, agregar a esa botonera los estados :hover y :active
+*/
+nav {
+	ul {
+		list-style: none;
+		li {
+			float: left;
+			margin: 5px;
+			padding: 10px;
+			background: #eee;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+
+			&:hover,
+			&:active {
+				background: #900;
+				color: #fff;
+			}
+
+		}
+	}
+}
+
+
+
