@@ -1,0 +1,56 @@
+// 1
+$listaColores: red, #447700, green, violet, #666;
+
+@each $valor in $listaColores {
+	p:nth-child(#{index($listaColores, $valor)}) {
+		color: $valor;
+	}
+}
+
+
+// 2
+$socialNetworks: facebook, twitter, youtube, instagram, linkedin, tumbler, googleplus;
+
+@each $social in $socialNetworks {
+	$distance: 0 !default;
+	.#{$social}-icon {
+		background: url('../../static/images/social-icons.jpg') no-repeat;
+		background-position: $distance -100px;
+		width: 100px;
+		height: 100px;
+		list-style: none;
+		float: left;
+	}
+	$distance: $distance - 100px;
+}
+
+// 3
+// Animacion de Opacidad
+@keyframes animacionOpacidad {
+	from{
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@for $i from 1 through length($socialNetworks) {
+	$delay: 0s !default;
+	.#{nth($socialNetworks, $i)}-icon {
+		animation: animacionOpacidad 1s infinite $delay;
+	}
+	$delay: $delay + 0.5s;
+}
+
+// 4
+$cantidad: 10;
+$altura: 5vh;
+
+@while $cantidad > 0 {
+	.height:nth-child(#{$cantidad}) {
+		height: $altura;
+	}
+	$altura: $altura + 5vh;
+	$cantidad: $cantidad - 1;
+}
