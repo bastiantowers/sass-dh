@@ -1,0 +1,33 @@
+$listaColores: red, #447700, green, violet, #000;
+
+$listaMedidas: 5px, 10px, 20px;
+
+$listaImagenes: '../../static/images/bg.jpg', '../../static/images/logo-sass.svg', '../../static/images/logo.png';
+
+h1 {
+	color: nth($listaColores, 2);
+}
+
+.especial {
+	color: nth($listaColores, 3);
+}
+
+.ancho{
+	$medidaTotal: 0 !default;
+	@each $medida in $listaMedidas {
+		$medidaTotal : $medidaTotal + $medida;
+	}
+	padding: $medidaTotal;
+}
+
+.imagen1 {
+	background: url(nth($listaImagenes, 1)) no-repeat;
+	width: 100%;
+	height: 100px;
+}
+
+.imagen3 {
+	background: url(nth($listaImagenes, 3)) no-repeat;
+	width: 44px;
+	height: 33px;
+}
