@@ -1,0 +1,30 @@
+// 1
+/* Si el Font-size ($fontSize) de un h1 es mayor que 1.5em,
+el parrafo subsiguiente tendra un Font-size de 1em; sino, sera de 0.7em. */
+
+$fontSize: 2.5em;
+
+@if ($fontSize > 1.5em) {
+	h1 + p {
+		font-size: 1em;
+	}
+} @else {
+	h1 + p {
+		font-size: 0.7em;
+	}
+}
+
+// 2
+/* Comprobar si el color de fondo del elemento ($color) es negro.
+Si es asi, el texto sera blanco; sino, aplicar texto negro. */
+
+$bgColor: #fff;
+
+body {
+	background-color: $bgColor;
+	@if $bgColor == #000 {
+		color: #fff;
+	} else {
+		color: #000;
+	}
+}

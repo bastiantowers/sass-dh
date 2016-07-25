@@ -1,0 +1,13 @@
+/* Si el Font-size ($fontSize) de un h1 es mayor que 1.5em,
+el parrafo subsiguiente tendra un Font-size de 1em; sino, sera de 0.7em. */
+h1 + p {
+  font-size: 1em; }
+
+/* Comprobar si el color de fondo del elemento ($color) es negro.
+Si es asi, el texto sera blanco; sino, aplicar texto negro. */
+body {
+  background-color: #fff; }
+  body else {
+    color: #000; }
+
+/*# sourceMappingURL=styles.css.map */
