@@ -1,0 +1,32 @@
+// 1
+/*
+Realizaremos tres tipos de mensajes (que siempre iran en etiquetas <span>). Todos los mensajes tendran el mismo ancho, alto y margenes. Luego contaremos con 3 clases:
+.error muestra el mensaje en color rojo
+.warning muestra el mensaje en color amarillo
+.success muestra el mensaje en color verde
+*/
+
+.mensaje {
+	width: 200px;
+	height: 80px;
+	background-color: #eee;
+	padding: 10px;
+	border-color: #ccc;
+	border-radius: 6px;
+	margin: 10px;
+}
+
+.error{
+	@extend .mensaje;
+	color: red;
+}
+
+.warning {
+	@extend .mensaje;
+	color: #DF7E2C;
+}
+
+.success {
+	@extend .mensaje;
+	color: green;
+}
