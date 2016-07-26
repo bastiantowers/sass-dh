@@ -1,0 +1,15 @@
+/*
+Generar un mixin que va a definir ciertas cosas para todas nuestras imagenes.
+Este mixin debe recibir los siguientes parametros:
+Color de borde
+Ancho maximo
+Margenes
+Luego generar una clase .imgExito que arme una imagen con color verde de borde,
+600px maximos de ancho y margen de 15px.
+*/
+.imgExito {
+  border: 10px green solid;
+  max-width: 600px;
+  margin: 15px; }
+
+/*# sourceMappingURL=styles.css.map */

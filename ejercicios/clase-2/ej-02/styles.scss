@@ -1,0 +1,20 @@
+// 1
+/*
+Generar un mixin que va a definir ciertas cosas para todas nuestras imagenes.
+Este mixin debe recibir los siguientes parametros:
+Color de borde
+Ancho maximo
+Margenes
+Luego generar una clase .imgExito que arme una imagen con color verde de borde,
+600px maximos de ancho y margen de 15px.
+*/
+
+@mixin miImagen($colorBorde, $anchoMax, $margenes) {
+	border: 10px $colorBorde solid;
+	max-width: $anchoMax;
+	margin: $margenes;
+}
+
+.imgExito {
+	@include miImagen(green, 600px, 15px);
+}
