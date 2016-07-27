@@ -6,7 +6,8 @@ h1 + p {
 /* Comprobar si el color de fondo del elemento ($color) es negro.
 Si es asi, el texto sera blanco; sino, aplicar texto negro. */
 body {
-  background-color: #fff; }
+  background-color: #000;
+  color: #fff; }
   body else {
     color: #000; }
 

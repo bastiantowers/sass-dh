@@ -1,0 +1,37 @@
+/*
+Crear una clase que ponga de fondo degradado de verde claro
+a oscuro utilizando la funcion de darken()
+
+En :hover, el degradado sera un 20% mas claro
+*/
+.darken {
+  width: 100px;
+  height: 20px;
+  background-image: linear-gradient(#0f0, black); }
+  .darken:hover {
+    background-image: linear-gradient(#0f0, #009900); }
+
+/*
+
+Crear una clase que utilizando rgba(), hacer que un elemento
+de color de fondo #F90 pase a un 0.5 de opacidad ante :hover
+
+*/
+.opacity-less, .mixin-red {
+  width: 100px;
+  height: 20px;
+  margin-top: 90px;
+  background-color: #f90; }
+  .opacity-less:hover, .mixin-red:hover {
+    background-color: rgba(255, 153, 0, 0.1); }
+
+/*
+
+Crear una clase que realice una mezcla entre rojo y verde para
+el color de fondo de un elemento, logrando que predomine el rojo
+
+*/
+.mixin-red {
+  background-color: #b22600; }
+
+/*# sourceMappingURL=styles.css.map */

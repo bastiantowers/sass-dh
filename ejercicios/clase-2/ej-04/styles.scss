@@ -1,36 +1,41 @@
-// 1
+// 4
 /*
 Tomando como referencia este sitio: http://apps.eky.hk/css-triangle-generator/
 o este ejemplo: https://css-tricks.com/animation-css-triangles-work/ .
 Crear un mixin para generar flechas/triangulos que pueda recibir los siguientes parametros
+
 Color
 Tamano
 Direccion
 */
 
-@mixin generateTriangle($direction, $color, $size) {
-	width: 0;
-	height: 0;
-	border-style: solid;
-
-	@if $direction == 'top'{
-		border-width: 0 $size $size $size;
-		border-color: transparent transparent $color transparent;
-	}
-	@if $direction == 'right'{
-		border-width: $size 0 $size $size;
-		border-color: transparent transparent transparent $color;
-	}
-	@if $direction == 'bottom'{
-		border-width: $size $size 0 $size;
-		border-color: $color transparent transparent transparent;
-	}
-	@if $direction == 'left'{
-		border-width: $size $size $size 0;
-		border-color: transparent $color transparent transparent;
-	}
+@mixin bp-mobile{
+  @media screen and (min-width:320px){
+    @content;
+  }
 }
 
-.triangle {
-	@include generateTriangle('left', #ff0000, 100px);
+@mixin bp-tablet{
+  @media screen and (min-width:760px){
+    @content;
+  }
+}
+
+@mixin bp-custom($breakpoint){
+  @media screen and (min-width:$breakpoint){
+    @content;
+  }
+}
+
+.clase{
+  color: red;
+  @include bp-mobile{
+    color:blue;
+  };
+  @include bp-mobile{
+    color:blue;
+  };
+  @include bp-custom(600px){
+    width: 900px;
+  }
 }
