@@ -1,12 +1,9 @@
 // 4
 /*
-Tomando como referencia este sitio: http://apps.eky.hk/css-triangle-generator/
-o este ejemplo: https://css-tricks.com/animation-css-triangles-work/ .
-Crear un mixin para generar flechas/triangulos que pueda recibir los siguientes parametros
-
-Color
-Tamano
-Direccion
+Crear 3 media-queries: uno para mobile con un breakpoint de 320px, otro para tablets de 740px,
+y otra que me permita configurar mi propio breakpoint. Aplicarlo a una clase .color que modifique
+el color de la font a la que se aplique según el dispositivo.
+Crear media-queries usando mixins para que su contenido se adapte a tablets y smartphones
 */
 
 @mixin bp-mobile{
